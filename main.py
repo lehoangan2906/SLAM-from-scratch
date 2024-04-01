@@ -6,7 +6,7 @@ environment = env.buildEnvironment((600, 1200))
 environment.originalMap = environment.map.copy() # save the original map that will be used to reset the map
 laser = sensors.LaserSensor(200, environment.originalMap, uncertainty = (0.5, 0.01))
 
-#environment.map.fill((0, 0, 0)) # Fill the map with black color
+environment.map.fill((0, 0, 0)) # Fill the map with black color
 environment.infomap = environment.map.copy() # Save the map that will be used to draw the point cloud in
 
 running = True
